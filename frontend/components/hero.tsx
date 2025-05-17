@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 
-export default function HeroSection() {
+export default function HeroSection({ bookLink = "#booking" }: { bookLink?: string }) {
   return (
     <section
       id="home"
@@ -34,7 +34,7 @@ export default function HeroSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="#booking">
+          <Link href={bookLink}>
             <Button size="lg" className="btn-primary rounded-full text-lg px-8 py-6">
               Book Appointment
             </Button>

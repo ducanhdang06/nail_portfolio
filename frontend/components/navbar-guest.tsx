@@ -43,7 +43,7 @@ export default function NavbarGuest() {
             <Link href="/#home" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Home</Link>
             <Link href="/#about" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">About</Link>
             <Link href="/#services" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Services</Link>
-            <Link href="/#booking" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
+            <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
             <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign in</Link>
             <Link href="/sign-up" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign up</Link>
           </div>
@@ -75,7 +75,7 @@ export default function NavbarGuest() {
             { href: '/#home', label: 'Home' },
             { href: '/#about', label: 'About' },
             { href: '/#services', label: 'Services' },
-            { href: '/#booking', label: 'Book Now' },
+            { href: '/sign-in', label: 'Book Now' },
             { href: '/sign-in', label: 'Sign in' },
             { href: '/sign-up', label: 'Sign up' },
           ].map((item) => (

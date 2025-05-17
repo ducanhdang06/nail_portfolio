@@ -24,14 +24,7 @@ const serviceIcons: Record<string, string> = {
   
   export default function Services({ services }: { services: Service[] }) {
   // Fallback if no services are provided
-  const displayServices = services.length > 0 ? services : [
-    { id: "1", name: "Gel Manicure", description: "Long-lasting gel polish applied with UV light for a perfect shine.", price: 35, duration_minutes: 45 },
-    { id: "2", name: "Acrylic Full Set", description: "Full acrylic nail extensions customized to your preferred length and shape.", price: 55, duration_minutes: 75 },
-    { id: "3", name: "Nail Art", description: "Custom nail art designs from simple to elaborate patterns.", price: 15, duration_minutes: 30 },
-    { id: "4", name: "Polish Change", description: "Quick polish change for hands or feet with your choice of color.", price: 20, duration_minutes: 20 },
-    { id: "5", name: "Pedicure", description: "Relaxing foot treatment including soak, exfoliation, massage and polish.", price: 45, duration_minutes: 60 },
-    { id: "6", name: "Nail Repair", description: "Quick fix for broken or damaged nails to restore their appearance.", price: 10, duration_minutes: 15 },
-  ];
+  const displayServices = services
 
     return (
     <section id="services" className="section-padding relative">
@@ -64,7 +57,9 @@ const serviceIcons: Record<string, string> = {
                 </div>
                 
                 <div className="flex justify-between items-start mb-2">
-              <h3 className="font-medium text-lg">{service.name}</h3>
+                  <h3 className="font-bold text-lg text-blush bg-blush/10 px-2 rounded-xl">
+                    {service.name}
+                  </h3>
                   <Badge variant="outline" className="bg-peach/10 text-peach border-peach/20">
                     ${service.price}
                   </Badge>
