@@ -24,11 +24,11 @@ export default async function ProtectedPage() {
 
   return (
     <div className="overflow-hidden">
-    <HeroSection />
-    <AboutSection />
-    <Services services={services ?? []} />
-    <PortfolioSection />
-    
-  </div>
+      <HeroSection />
+      <AboutSection />
+      <Services services={services ?? []} />
+      <PortfolioSection />
+
+    </div>
   );
 }

@@ -106,7 +106,7 @@ export default function ProfilePage() {
                     className="border-peach text-peach hover:bg-peach/10 hover:text-peach"
                     onClick={async () => {
                       await supabase.auth.signOut();
-                      router.push("/sign-in");
+                      router.push("/");
                     }}
                   >
                     Sign Out
