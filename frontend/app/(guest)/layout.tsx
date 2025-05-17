@@ -77,9 +77,9 @@ export default function RootLayout({
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-gray-700">Contact</h4>
-                    <p className="text-sm text-gray-600">123 Nail Street, Beauty City</p>
-                    <p className="text-sm text-gray-600">email@example.com</p>
-                    <p className="text-sm text-gray-600">(123) 456-7890</p>
+                    <p className="text-sm text-gray-600">314 S Twin Oaks Valley Rd, Unit 113, San Marcos, CA 92078</p>
+                    <p className="text-sm text-gray-600">thaoanh.1110@gmail.com</p>
+                    <p className="text-sm text-gray-600">(760) 886-3309</p>
                   </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-100 text-center text-xs">
