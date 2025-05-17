@@ -27,8 +27,8 @@ export default function AboutSection() {
               {/* Main image */}
               <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-soft">
                 <Image
-                  src="/placeholder.svg?height=600&width=400"
-                  alt="Sarah Johnson, Nail Artist"
+                  src="/portfolio.jpg?height=600&width=400"
+                  alt="Sophie Ho, Nail Artist"
                   fill
                   className="object-cover"
                   style={{ objectPosition: "center top" }}
