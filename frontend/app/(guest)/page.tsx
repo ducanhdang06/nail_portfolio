@@ -9,13 +9,16 @@ export default async function Home() {
   const supabase = await createClient();
   const { data: services, error } = await supabase.from("services").select("*");
 
+  if (error) {
+    console.error("Supabase services fetch error:", error);
+  }
+
   return (
     <div className="overflow-hidden">
-      <HeroSection />
+      <HeroSection bookLink="/sign-in" />
       <AboutSection />
       <Services services={services ?? []} />
       <PortfolioSection />
-      <BookingSection />
     </div>
   );
 }

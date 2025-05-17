@@ -7,6 +7,7 @@ import Services from "@/components/services";
 import AboutSection from "@/components/about";
 import PortfolioSection from "@/components/portfolio";
 import BookingSection from "@/components/booking";
+import ReviewWrapper from "@/components/review-wrapper";
 
 export default async function ProtectedPage() {
   const supabase = await createClient();
@@ -24,11 +25,12 @@ export default async function ProtectedPage() {
 
   return (
     <div className="overflow-hidden">
-      <HeroSection />
+      <HeroSection bookLink="#booking" />
       <AboutSection />
       <Services services={services ?? []} />
       <PortfolioSection />
-
+      <BookingSection />
+      <ReviewWrapper />
     </div>
   );
 }
