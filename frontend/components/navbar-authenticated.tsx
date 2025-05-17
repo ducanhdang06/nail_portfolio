@@ -12,7 +12,7 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
     <>
       <nav className="w-full flex justify-center h-16 backdrop-blur-sm bg-white/70 sticky top-0 z-50 shadow-pastel">
         <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5">
-          <div className="flex items-center">
+          <div className="flex-1 flex items-center">
             <Link href="/protected" className="text-xl font-semibold text-blush">
               <span className="font-accent">Sophie's</span> Nail Studio
             </Link>
@@ -36,12 +36,12 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               href="/protected/#booking"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               Book Now
-            </Link>
+            </Link> */}
             <Link
               href="/protected/profile"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
@@ -55,7 +55,7 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
               My Appointment
             </Link>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 justify-end">
             <Button
               type="button"
               variant="outline"

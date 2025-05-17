@@ -29,7 +29,6 @@ export default async function ProtectedPage() {
       <AboutSection />
       <Services services={services ?? []} />
       <PortfolioSection />
-      <BookingSection />
       <ReviewWrapper />
     </div>
   );
