@@ -15,9 +15,13 @@ export default async function ProtectedLayout({ children }: { children: React.Re
   }
 
   return (
-    <>
-      <NavbarAuthenticated user={user} />
-      <main className="p-6">{children}</main>
-    </>
+    <main className="min-h-screen flex flex-col items-center">
+      <div className="flex-1 w-full flex flex-col items-center">
+        <NavbarAuthenticated user={user} />
+        <div className="w-full">
+          {children}
+        </div>
+      </div>
+    </main>
   );
 }

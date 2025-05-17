@@ -7,6 +7,7 @@ import { Quicksand, Poppins, Caveat } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "../globals.css";
+import NavbarGuest from "@/components/navbar-guest";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -53,30 +54,7 @@ export default function RootLayout({
         >
           <main className="min-h-screen flex flex-col items-center">
             <div className="flex-1 w-full flex flex-col items-center">
-              <nav className="w-full flex justify-center h-16 backdrop-blur-sm bg-white/70 sticky top-0 z-50 shadow-pastel">
-                <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5">
-                  <div className="flex items-center">
-                    <Link href="/" className="text-xl font-semibold text-blush">
-                      <span className="font-accent">Sophie's</span> Nail Studio
-                    </Link>
-                  </div>
-                  <div className="hidden md:flex space-x-6">
-                    <Link href="/#home" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Home</Link>
-                    <Link href="/#about" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">About</Link>
-                    <Link href="/#services" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Services</Link>
-                    <Link href="/#booking" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
-                    <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign in</Link>
-                    <Link href="/sign-up" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign up</Link>
-                  </div>
-                  <div className="md:hidden">
-                    <button className="p-2 rounded-full bg-blush text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </nav>
+              <NavbarGuest />
 
               <div className="w-full">
                 {children}
