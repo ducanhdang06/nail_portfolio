@@ -1,0 +1,21 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nail polish bottle -->
+  <rect x="10" y="3" width="10" height="6" rx="2" fill="#E3D7FF" stroke="#9D7FEA" stroke-width="0.5"/>
+  <path d="M8 9H22V23C22 25.2091 20.2091 27 18 27H12C9.79086 27 8 25.2091 8 23V9Z" fill="#FADADD" stroke="#EA7F9D" stroke-width="0.5"/>
+  
+  <!-- Shine effect -->
+  <path d="M10 11V23C10 24 11 25 12 25H15V11H10Z" fill="white" fill-opacity="0.3"/>
+  <circle cx="18" cy="15" r="2" fill="#FFD6C0" fill-opacity="0.5"/>
+  
+  <!-- Brush/wand -->
+  <rect x="14" y="0" width="2" height="9" rx="1" fill="#9D7FEA" stroke="#9D7FEA" stroke-width="0.2"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="5" cy="15" r="1.5" fill="#C6F7E2" fill-opacity="0.6"/>
+  <circle cx="25" cy="20" r="1.5" fill="#B3E5FC" fill-opacity="0.6"/>
+  <path d="M5 23L8 20M25 11L22 14" stroke="#E3D7FF" stroke-width="0.5"/>
+  
+  <!-- Droplets -->
+  <circle cx="15" cy="21" r="0.8" fill="#EA7F9D"/>
+  <circle cx="18" cy="23" r="0.6" fill="#EA7F9D"/>
+</svg> 

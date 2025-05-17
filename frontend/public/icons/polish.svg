@@ -1,0 +1,27 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nail polish bottle -->
+  <rect x="10" y="4" width="10" height="5" rx="1" fill="#E3D7FF" stroke="#9D7FEA" stroke-width="0.5"/>
+  <path d="M8 9H22V22C22 24.2091 20.2091 26 18 26H12C9.79086 26 8 24.2091 8 22V9Z" fill="#FADADD" stroke="#EA7F9D" stroke-width="0.5"/>
+  
+  <!-- Bottle shine -->
+  <path d="M10 11V22C10 23 10.5 24 12 24H15V11H10Z" fill="white" fill-opacity="0.4"/>
+  
+  <!-- Brush -->
+  <rect x="14" y="2" width="2" height="7" rx="1" fill="#9D7FEA" stroke="#9D7FEA" stroke-width="0.3"/>
+  
+  <!-- Polish droplets -->
+  <circle cx="15" cy="11" r="1" fill="#EA7F9D"/>
+  <path d="M18 13C18 14.1046 17.1046 15 16 15C14.8954 15 14 14.1046 14 13C14 11.8954 15 10 16 10C17 10 18 11.8954 18 13Z" fill="#EA7F9D"/>
+  <circle cx="13" cy="17" r="0.5" fill="#EA7F9D"/>
+  
+  <!-- Fingernails being painted -->
+  <g transform="translate(20, 12)">
+    <rect x="0" y="0" width="5" height="7" rx="2.5" fill="#FFE9EF" stroke="#EA7F9D" stroke-width="0.5"/>
+    <rect x="0.5" y="0.5" width="4" height="3" rx="2" fill="#FADADD"/>
+  </g>
+  
+  <g transform="translate(4, 18)">
+    <rect x="0" y="0" width="5" height="7" rx="2.5" fill="#FFE9EF" stroke="#EA7F9D" stroke-width="0.5"/>
+    <rect x="0.5" y="0.5" width="4" height="6" rx="2" fill="#FADADD"/>
+  </g>
+</svg> 
