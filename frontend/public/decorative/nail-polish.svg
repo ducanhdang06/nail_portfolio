@@ -1,0 +1,17 @@
+<svg width="120" height="200" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bottle Cap -->
+  <rect x="35" y="10" width="50" height="30" rx="5" fill="#E3D7FF" stroke="#9D7FEA" stroke-width="2"/>
+  
+  <!-- Bottle Body -->
+  <path d="M30 40 L30 170 C30 180 40 190 60 190 C80 190 90 180 90 170 L90 40 L30 40Z" fill="#FADADD" stroke="#EA7F9D" stroke-width="2"/>
+  
+  <!-- Bottle Shine -->
+  <path d="M40 50 L40 160 C40 170 45 175 60 175 L60 50 L40 50Z" fill="#FFE9EF" fill-opacity="0.5"/>
+  
+  <!-- Brush -->
+  <rect x="55" y="15" width="10" height="35" rx="5" fill="#9D7FEA" stroke="#9D7FEA" stroke-width="1"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="60" cy="100" r="15" fill="#FFD6C0" fill-opacity="0.7"/>
+  <path d="M60 85 L60 115 M45 100 L75 100" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg> 

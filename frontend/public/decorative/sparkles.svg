@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main sparkle -->
+  <path d="M40 10L43 30L54 20L46 36L66 40L46 44L54 60L43 50L40 70L37 50L26 60L34 44L14 40L34 36L26 20L37 30L40 10Z" fill="#FFD6C0" stroke="#EA7F9D" stroke-width="1"/>
+  
+  <!-- Small sparkle top right -->
+  <path d="M65 15L66 20L70 18L67 22L72 23L67 24L70 28L66 26L65 31L64 26L60 28L63 24L58 23L63 22L60 18L64 20L65 15Z" fill="#E3D7FF" stroke="#9D7FEA" stroke-width="1"/>
+  
+  <!-- Small sparkle bottom left -->
+  <path d="M15 65L16 70L20 68L17 72L22 73L17 74L20 78L16 76L15 81L14 76L10 78L13 74L8 73L13 72L10 68L14 70L15 65Z" fill="#C6F7E2" stroke="#7FEAB5" stroke-width="1"/>
+  
+  <!-- Tiny dots -->
+  <circle cx="25" cy="25" r="2" fill="#B3E5FC"/>
+  <circle cx="55" cy="55" r="2" fill="#B3E5FC"/>
+  <circle cx="15" cy="50" r="1.5" fill="#FADADD"/>
+  <circle cx="65" cy="40" r="1.5" fill="#FADADD"/>
+  <circle cx="35" cy="65" r="1.5" fill="#E3D7FF"/>
+</svg> 

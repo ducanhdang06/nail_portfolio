@@ -1,0 +1,22 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hand outline -->
+  <path d="M10 45C10 45 10 30 15 25C20 20 25 20 25 20V5C25 5 30 5 30 10V25H35V15C35 15 40 15 40 20V30H45V25C45 25 50 25 50 30V45C50 52 45 55 40 55H15C12 55 10 50 10 45Z" fill="#FFE9EF" stroke="#EA7F9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Fingernails with designs -->
+  <rect x="22" y="7" width="6" height="10" rx="3" fill="#FADADD" stroke="#EA7F9D"/>
+  <rect x="32" y="17" width="6" height="10" rx="3" fill="#E3D7FF" stroke="#9D7FEA"/>
+  <rect x="42" y="27" width="6" height="10" rx="3" fill="#C6F7E2" stroke="#7FEAB5"/>
+  
+  <!-- Nail design elements -->
+  <circle cx="25" cy="11" r="1.5" fill="white"/>
+  <circle cx="25" cy="14" r="1" fill="white"/>
+  
+  <path d="M35 20L35 24M33 22L37 22" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  
+  <path d="M43 30C43 30 43 32 45 32C47 32 47 30 47 30" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="45" cy="34" r="1" fill="white"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="15" cy="35" r="3" fill="#B3E5FC" opacity="0.6"/>
+  <circle cx="40" cy="45" r="2" fill="#FFD6C0" opacity="0.6"/>
+</svg> 
