@@ -93,8 +93,8 @@ export default async function ProtectedLayout({
                 <p className="text-sm text-gray-600">
                   314 S Twin Oaks Valley Rd, Unit 113, San Marcos, CA 92078
                 </p>
-                <p className="text-sm text-gray-600">thaoanh.1110@gmail.com</p>
-                <p className="text-sm text-gray-600">(760) 886-3309</p>
+                <p className="text-sm text-gray-600">nailsbysophie1110@gmail.com</p>
+                <p className="text-sm text-gray-600">(760) 744-2289</p>
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-100 text-center text-xs">

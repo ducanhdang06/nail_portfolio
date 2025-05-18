@@ -1,8 +1,3 @@
-import DeployButton from "@/components/deploy-button";
-import { EnvVarWarning } from "@/components/env-var-warning";
-import HeaderAuth from "@/components/header-auth";
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { Quicksand, Poppins, Caveat } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
@@ -111,9 +106,9 @@ export default function RootLayout({
                       314 S Twin Oaks Valley Rd, Unit 113, San Marcos, CA 92078
                     </p>
                     <p className="text-sm text-gray-600">
-                      thaoanh.1110@gmail.com
+                      nailsbysophie1110@gmail.com
                     </p>
-                    <p className="text-sm text-gray-600">(760) 886-3309</p>
+                    <p className="text-sm text-gray-600">(760) 744-2289</p>
                   </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-100 text-center text-xs">
