@@ -20,7 +20,9 @@ export default function ProfilePage() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         router.push("/sign-in");
         return;
@@ -65,7 +67,9 @@ export default function ProfilePage() {
             </div>
             {/* Profile info */}
             <div>
-              <h1 className="text-2xl font-medium text-gray-800 mb-1">{fullName}</h1>
+              <h1 className="text-2xl font-medium text-gray-800 mb-1">
+                {fullName}
+              </h1>
               <p className="text-gray-600">{authUser?.email}</p>
             </div>
           </div>
@@ -82,11 +86,16 @@ export default function ProfilePage() {
                     <KeyRound size={20} className="text-lilac" />
                     <div>
                       <h3 className="font-medium text-gray-700">Password</h3>
-                      <p className="text-sm text-gray-500">Change your password to keep your account secure</p>
+                      <p className="text-sm text-gray-500">
+                        Change your password to keep your account secure
+                      </p>
                     </div>
                   </div>
                   <Link href="/protected/profile/reset-password">
-                    <Button variant="outline" className="border-lilac text-lilac hover:bg-lilac/10 hover:text-lilac">
+                    <Button
+                      variant="outline"
+                      className="border-lilac text-lilac hover:bg-lilac/10 hover:text-lilac"
+                    >
                       Change Password
                     </Button>
                   </Link>
@@ -98,11 +107,13 @@ export default function ProfilePage() {
                     <LogOut size={20} className="text-peach" />
                     <div>
                       <h3 className="font-medium text-gray-700">Sign Out</h3>
-                      <p className="text-sm text-gray-500">Sign out from your account on this device</p>
+                      <p className="text-sm text-gray-500">
+                        Sign out from your account on this device
+                      </p>
                     </div>
                   </div>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="border-peach text-peach hover:bg-peach/10 hover:text-peach"
                     onClick={async () => {
                       await supabase.auth.signOut();

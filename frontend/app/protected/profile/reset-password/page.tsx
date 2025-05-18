@@ -12,13 +12,17 @@ export default async function ResetPassword(props: {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] w-full">
       <div className="w-full max-w-md bg-white/90 rounded-3xl shadow-pastel border border-blush p-8">
-        <h1 className="text-2xl font-medium mb-1 text-gray-800 text-center">Reset Password</h1>
+        <h1 className="text-2xl font-medium mb-1 text-gray-800 text-center">
+          Reset Password
+        </h1>
         <p className="text-sm text-gray-500 mb-6 text-center">
           Please enter your new password below.
         </p>
         <form className="flex flex-col space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="password" className="text-gray-700">New password</Label>
+            <Label htmlFor="password" className="text-gray-700">
+              New password
+            </Label>
             <div className="relative">
               <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
                 <Lock size={16} className="text-gray-400" />
@@ -33,7 +37,9 @@ export default async function ResetPassword(props: {
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="confirmPassword" className="text-gray-700">Confirm password</Label>
+            <Label htmlFor="confirmPassword" className="text-gray-700">
+              Confirm password
+            </Label>
             <div className="relative">
               <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
                 <Lock size={16} className="text-gray-400" />
@@ -48,7 +54,10 @@ export default async function ResetPassword(props: {
             </div>
           </div>
           <div className="pt-2">
-            <SubmitButton formAction={resetPasswordAction} className="w-full btn-primary">
+            <SubmitButton
+              formAction={resetPasswordAction}
+              className="w-full btn-primary"
+            >
               Reset password
             </SubmitButton>
             <FormMessage message={searchParams} />
