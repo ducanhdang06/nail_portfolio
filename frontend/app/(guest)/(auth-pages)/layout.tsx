@@ -9,11 +9,9 @@ export default async function Layout({
         {/* Decorative elements */}
         <div className="absolute -top-10 -right-10 w-32 h-32 bg-lilac/20 rounded-full"></div>
         <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-peach/20 rounded-full"></div>
-        
+
         {/* Content */}
-        <div className="relative z-10">
-          {children}
-        </div>
+        <div className="relative z-10">{children}</div>
       </div>
     </div>
   );

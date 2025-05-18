@@ -19,7 +19,7 @@ export default async function ProtectedPage() {
   const { data: services, error } = await supabase.from("services").select("*");
 
   if (!user) {
-    //return 
+    //return
     redirect("/sign-in");
   }
 

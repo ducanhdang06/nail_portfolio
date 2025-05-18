@@ -75,7 +75,7 @@ export default function NavbarGuest() {
             { href: '/#home', label: 'Home' },
             { href: '/#about', label: 'About' },
             { href: '/#services', label: 'Services' },
-            { href: '/sign-in', label: 'Book Now' },
+            // { href: '/sign-in', label: 'Book Now' },
             { href: '/sign-in', label: 'Sign in' },
             { href: '/sign-up', label: 'Sign up' },
           ].map((item) => (
