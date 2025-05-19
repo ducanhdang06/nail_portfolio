@@ -249,7 +249,7 @@ export default function ReviewSection({ services, userName }: { services: string
 
             <div className="flex flex-col gap-2 w-full">
               <a
-                href="https://www.yelp.com/writeareview/biz/gobahli-nails-san-marcos-6"
+                href="https://www.yelp.com/writeareview/biz/z1RWdELc2JnBcYbHLAz_Ng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
