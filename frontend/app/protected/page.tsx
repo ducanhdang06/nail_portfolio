@@ -16,8 +16,6 @@ export default async function ProtectedPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const { data: services, error } = await supabase.from("services").select("*");
-
   if (!user) {
     //return
     redirect("/sign-in");
@@ -26,10 +24,6 @@ export default async function ProtectedPage() {
   return (
     <div className="overflow-hidden">
       <HeroSection isSignedIn={true} userName={user.user_metadata.full_name} />
-      <AboutSection />
-      <Services services={services ?? []} />
-      <PortfolioSection />
-      <ReviewWrapper />
     </div>
   );
 }

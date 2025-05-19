@@ -28,9 +28,9 @@ function generateTimeSlots() {
 
 const TIME_SLOTS = generateTimeSlots();
 
-export default function BookingSection({ services }: { services: string[] }) {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+export default function BookingSection({ services, userName, userPhone }: { services: string[], userName?: string, userPhone?: string }) {
+  const [name, setName] = useState(userName || "");
+  const [phone, setPhone] = useState(userPhone || "");
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
