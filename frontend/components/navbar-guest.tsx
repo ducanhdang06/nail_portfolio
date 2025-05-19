@@ -40,10 +40,11 @@ export default function NavbarGuest() {
             </Link>
           </div>
           <div className="hidden md:flex space-x-6">
-            <Link href="/#home" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Home</Link>
-            <Link href="/#about" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">About</Link>
-            <Link href="/#services" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Services</Link>
-            <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
+            <Link href="/" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Home</Link>
+            <Link href="/about-me" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">About</Link>
+            <Link href="/services" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Services</Link>
+            <Link href="/booking" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
+            <Link href="/leave-review" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Leave a Review</Link>
             <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign in</Link>
             <Link href="/sign-up" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign up</Link>
           </div>
@@ -72,10 +73,11 @@ export default function NavbarGuest() {
       >
         <div className="bg-white/95 rounded-b-3xl shadow-pastel mx-2 py-4 flex flex-col items-center space-y-2 border-t border-blush">
           {[
-            { href: '/#home', label: 'Home' },
-            { href: '/#about', label: 'About' },
-            { href: '/#services', label: 'Services' },
-            // { href: '/sign-in', label: 'Book Now' },
+            { href: '/', label: 'Home' },
+            { href: '/about-me', label: 'About' },
+            { href: '/services', label: 'Services' },
+            { href: '/booking', label: 'Book Now' },
+            { href: '/leave-review', label: 'Leave a Review' },
             { href: '/sign-in', label: 'Sign in' },
             { href: '/sign-up', label: 'Sign up' },
           ].map((item) => (

@@ -73,28 +73,34 @@ export default function RootLayout({
                     </h4>
                     <div className="flex flex-col space-y-2">
                       <Link
-                        href="#home"
+                        href="/"
                         className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
                       >
                         Home
                       </Link>
                       <Link
-                        href="#about"
+                        href="/about-me"
                         className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
                       >
                         About
                       </Link>
                       <Link
-                        href="#services"
+                        href="/services"
                         className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
                       >
                         Services
                       </Link>
                       <Link
-                        href="#booking"
+                        href="/booking"
                         className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
                       >
                         Book Now
+                      </Link>
+                      <Link
+                        href="/leave-review"
+                        className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
+                      >
+                        Leave a Review
                       </Link>
                     </div>
                   </div>
