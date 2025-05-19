@@ -53,7 +53,7 @@ export default async function ProtectedLayout({
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <h3 className="font-accent text-2xl mb-4 text-blush">
-                  Sophie's Nail Studio
+                  Nails by Sophie
                 </h3>
                 <p className="text-sm text-gray-600">
                   Creating beautiful nail art for every occasion.
@@ -99,7 +99,7 @@ export default async function ProtectedLayout({
             </div>
             <div className="mt-8 pt-8 border-t border-gray-100 text-center text-xs">
               <p>
-                © {new Date().getFullYear()} Sophie's Nail Studio. All rights
+                © {new Date().getFullYear()} Nails by Sophie. All rights
                 reserved.
               </p>
             </div>
