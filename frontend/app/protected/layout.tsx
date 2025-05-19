@@ -63,28 +63,40 @@ export default async function ProtectedLayout({
                 <h4 className="font-semibold mb-3">Quick Links</h4>
                 <div className="flex flex-col space-y-2">
                   <a
-                    href="/protected#home"
+                    href="/protected/"
                     className="text-sm hover:text-blush transition-colors"
                   >
                     Home
                   </a>
                   <a
-                    href="/protected#about"
+                    href="/protected/about-me"
                     className="text-sm hover:text-blush transition-colors"
                   >
                     About
                   </a>
                   <a
-                    href="/protected#services"
+                    href="/protected/services"
                     className="text-sm hover:text-blush transition-colors"
                   >
                     Services
                   </a>
                   <a
-                    href="/protected#booking"
+                    href="/protected/booking"
                     className="text-sm hover:text-blush transition-colors"
                   >
                     Book Now
+                  </a>
+                  <a
+                    href="/protected/leave-review"
+                    className="text-sm hover:text-blush transition-colors"
+                  >
+                    Leave a Review
+                  </a>
+                  <a
+                    href="/protected/profile"
+                    className="text-sm hover:text-blush transition-colors"
+                  >
+                    Profile
                   </a>
                 </div>
               </div>
