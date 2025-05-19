@@ -105,7 +105,7 @@ export default function ReviewSection({ services, userName }: { services: string
         console.error("Submission error:", insertError.message);
         alert("Something went wrong. Please try again.");
       } else {
-        setSubmittedComment(`For Sophie: ${comment}`);
+        setSubmittedComment(comment);
         setShowPopup(true);
         // Reset form
         setName("");

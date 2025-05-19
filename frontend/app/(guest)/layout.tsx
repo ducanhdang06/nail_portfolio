@@ -10,8 +10,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Sophie's Nail Studio",
-  description: "Book appointments with Sarah for custom nail art and designs",
+  title: "Nails by Sophie",
+  description: "Book appointments with Sophie for custom nail art and designs",
 };
 
 const quicksand = Quicksand({
