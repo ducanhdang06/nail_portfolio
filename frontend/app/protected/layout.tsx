@@ -3,7 +3,6 @@ import "../globals.css";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import NavbarAuthenticated from "@/components/navbar-authenticated";
-import SubmitReview from "@/components/submit-review";
 import { Quicksand, Poppins, Caveat } from "next/font/google";
 
 const quicksand = Quicksand({
@@ -79,6 +78,12 @@ export default async function ProtectedLayout({
                     className="text-sm hover:text-blush transition-colors"
                   >
                     Services
+                  </a>
+                  <a
+                    href="/protected/portfolio"
+                    className="text-sm hover:text-blush transition-colors"
+                  >
+                    Portfolio
                   </a>
                   <a
                     href="/protected/booking"

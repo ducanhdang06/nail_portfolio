@@ -91,6 +91,12 @@ export default function RootLayout({
                         Services
                       </Link>
                       <Link
+                        href="/portfolio"
+                        className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
+                      >
+                        Portfolio
+                      </Link>
+                      <Link
                         href="/booking"
                         className="text-sm text-gray-700 font-medium hover:text-blush transition-colors"
                       >

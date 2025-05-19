@@ -6,6 +6,7 @@ import { Label } from "./ui/label";
 import { Button } from "./ui/button";
 import { Checkbox } from "./ui/checkbox";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
 
 function generateTimeSlots() {
   const slots = [];
@@ -29,6 +30,7 @@ function generateTimeSlots() {
 const TIME_SLOTS = generateTimeSlots();
 
 export default function BookingSection({ services, userName, userPhone }: { services: string[], userName?: string, userPhone?: string }) {
+  const router = useRouter();
   const [name, setName] = useState(userName || "");
   const [phone, setPhone] = useState(userPhone || "");
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -36,6 +38,8 @@ export default function BookingSection({ services, userName, userPhone }: { serv
   const [time, setTime] = useState("");
   const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const isAuthenticated = Boolean(userName || userPhone);
 
   function handleServiceChange(service: string) {
     setSelectedServices((prev) =>
@@ -43,6 +47,14 @@ export default function BookingSection({ services, userName, userPhone }: { serv
         ? prev.filter((s) => s !== service)
         : [...prev, service]
     );
+  }
+
+  function handleBackToHome() {
+    if (isAuthenticated) {
+      router.push('/protected/');
+    } else {
+      router.push('/');
+    }
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -73,7 +85,7 @@ export default function BookingSection({ services, userName, userPhone }: { serv
       );
 
       console.log("EmailJS result:", result.text);
-      alert("🎉 Booking request sent successfully!");
+      setShowPopup(true);
 
       // Reset form
       setName("");
@@ -89,7 +101,6 @@ export default function BookingSection({ services, userName, userPhone }: { serv
       setLoading(false);
     }
   }
-
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-blush-light py-12 px-2">
@@ -186,6 +197,26 @@ export default function BookingSection({ services, userName, userPhone }: { serv
           {loading ? "Submitting..." : "Request Appointment"}
         </Button>
       </form>
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="absolute inset-0 bg-gradient-to-br from-blush-light/80 via-peach/40 to-mint/30 backdrop-blur-sm" />
+          <div className="relative bg-white/95 rounded-3xl shadow-2xl border-2 border-blush p-8 max-w-md w-full mx-4 flex flex-col items-center space-y-6 animate-fadeInUp">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blush/10 mb-2 shadow-soft">
+              <span className="text-4xl">🎉</span>
+            </div>
+            <h2 className="text-3xl font-accent text-blush font-bold text-center">Thank You for Your Booking!</h2>
+            <p className="text-center text-lg text-gray-700 font-medium">
+              Your booking request has been received.<br />You will be contacted soon for confirmation.
+            </p>
+            <Button
+              onClick={handleBackToHome}
+              className="w-full bg-blush text-white rounded-2xl font-bold shadow-pastel hover:bg-blush/90 transition-colors text-lg py-4 mt-2"
+            >
+              Back to Home
+            </Button>
+          </div>
+        </div>
+      )}
     </section>
   );
 } 

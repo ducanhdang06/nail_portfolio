@@ -43,6 +43,7 @@ export default function NavbarGuest() {
             <Link href="/" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Home</Link>
             <Link href="/about-me" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">About</Link>
             <Link href="/services" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Services</Link>
+            <Link href="/portfolio" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Portfolio</Link>
             <Link href="/booking" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Book Now</Link>
             <Link href="/leave-review" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Leave a Review</Link>
             <Link href="/sign-in" className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors">Sign in</Link>
@@ -76,6 +77,7 @@ export default function NavbarGuest() {
             { href: '/', label: 'Home' },
             { href: '/about-me', label: 'About' },
             { href: '/services', label: 'Services' },
+            { href: '/portfolio', label: 'Portfolio' },
             { href: '/booking', label: 'Book Now' },
             { href: '/leave-review', label: 'Leave a Review' },
             { href: '/sign-in', label: 'Sign in' },

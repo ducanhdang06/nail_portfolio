@@ -37,6 +37,12 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
               Services
             </Link>
             <Link
+              href="/protected/portfolio"
+              className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
+            >
+              Portfolio
+            </Link>
+            <Link
               href="/protected/booking"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
