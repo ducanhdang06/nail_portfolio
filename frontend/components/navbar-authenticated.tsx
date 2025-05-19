@@ -19,40 +19,40 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
           </div>
           <div className="hidden md:flex space-x-6">
             <Link
-              href="/protected/#home"
+              href="/protected/"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               Home
             </Link>
             <Link
-              href="/protected/#about"
+              href="/protected/about-me"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               About
             </Link>
             <Link
-              href="/protected/#services"
+              href="/protected/services"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               Services
             </Link>
-            {/* <Link
-              href="/protected/#booking"
+            <Link
+              href="/protected/booking"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               Book Now
-            </Link> */}
+            </Link>
+            <Link
+              href="/protected/leave-review"
+              className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
+            >
+              Leave a Review
+            </Link>
             <Link
               href="/protected/profile"
               className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
             >
               Profile
-            </Link>
-            <Link
-              href="/protected/my-appointment"
-              className="text-gray-700 font-medium hover:text-blush hover:underline transition-colors"
-            >
-              My Appointment
             </Link>
           </div>
           <div className="flex items-center gap-3 justify-end">
@@ -88,32 +88,39 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
       >
         <div className="bg-white/95 rounded-b-3xl shadow-pastel mx-2 py-4 flex flex-col items-center space-y-2 border-t border-blush">
           <Link
-            href="/protected/#home"
+            href="/protected/"
             className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link
-            href="/protected/#about"
+            href="/protected/about-me"
             className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link
-            href="/protected/#services"
+            href="/protected/services"
             className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </Link>
           <Link
-            href="/protected/#booking"
+            href="/protected/booking"
             className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Book Now
+          </Link>
+          <Link
+            href="/protected/leave-review"
+            className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Leave a Review
           </Link>
           <Link
             href="/protected/profile"
@@ -121,13 +128,6 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
             onClick={() => setIsMenuOpen(false)}
           >
             Profile
-          </Link>
-          <Link
-            href="/protected/my-appointment"
-            className="w-full text-center py-2 text-lg font-medium text-gray-700 hover:text-blush hover:bg-blush/10 rounded-xl transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            My Appointment
           </Link>
         </div>
       </div>

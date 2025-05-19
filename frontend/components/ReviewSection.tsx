@@ -9,8 +9,8 @@ import { Star, Image as ImageIcon } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 
 
-export default function ReviewSection({ services }: { services: string[] }) {
-  const [name, setName] = useState("");
+export default function ReviewSection({ services, userName }: { services: string[], userName?: string }) {
+  const [name, setName] = useState(userName || "");
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [rating, setRating] = useState(0);
   const [image, setImage] = useState<File | null>(null);
