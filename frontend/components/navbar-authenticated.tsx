@@ -14,7 +14,7 @@ export default function NavbarAuthenticated({ user }: { user: any }) {
         <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5">
           <div className="flex-1 flex items-center">
             <Link href="/protected" className="text-xl font-semibold text-blush">
-              <span className="font-accent">Sophie's</span> Nail Studio
+              <span className="font-accent">Nails</span> by Sophie
             </Link>
           </div>
           <div className="hidden md:flex space-x-6">
