@@ -5,6 +5,7 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./ui/button";
 import { Checkbox } from "./ui/checkbox";
+import emailjs from "@emailjs/browser";
 
 function generateTimeSlots() {
   const slots = [];
@@ -44,15 +45,51 @@ export default function BookingSection({ services }: { services: string[] }) {
     );
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    if (!name || !phone || selectedServices.length === 0 || !date || !time) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
     setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
+
+    const templateParams = {
+      name,
+      phone,
+      services: selectedServices.join(", "),
+      date,
+      time,
+      notes: notes || "No notes provided",
+    };
+
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      console.log("EmailJS result:", result.text);
+      alert("🎉 Booking request sent successfully!");
+
+      // Reset form
+      setName("");
+      setPhone("");
+      setSelectedServices([]);
+      setDate("");
+      setTime("");
+      setNotes("");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
       setLoading(false);
-      alert("Booking request submitted! (Demo only)");
-    }, 1200);
+    }
   }
+
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-blush-light py-12 px-2">
