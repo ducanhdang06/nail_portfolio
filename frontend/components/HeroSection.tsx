@@ -87,7 +87,7 @@ export default function HeroSection({ isSignedIn, userName }: HeroSectionProps) 
           ) : (
             <div className="text-sm text-muted-foreground flex flex-col items-center gap-1">
               <span>Welcome back{userName ? `, ${userName}` : ''}!</span>
-              <Link href="/protected/profile" className="text-blush font-medium hover:underline">View Account</Link>
+              <Link href="/protected/profile" className="text-rose-600 font-semibold underline hover:text-rose-700 transition-colors">View Account</Link>
             </div>
           )}
         </div>
